@@ -1,0 +1,1 @@
+db.clients.find({LOCALITE: "Poitiers"}, {NOM: true, COMPTE: true, COMMANDES: true, _id: false})

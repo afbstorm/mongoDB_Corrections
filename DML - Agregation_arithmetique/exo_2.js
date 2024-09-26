@@ -1,0 +1,1 @@
+// Afficher le montant du COMPTES des clients ayant effectué une ou // plusieurs COMMANDES divisé par le nombre clients.// (Indice: Utiliser un curseur pour récupérer le nombre de clients)var nbClient= db.clients.find().count();db.clients.aggregate([    {$project: {        DIVISER: {$divide: ["$COMPTE", nbClient]}    }}])

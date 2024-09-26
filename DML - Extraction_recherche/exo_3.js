@@ -1,0 +1,1 @@
+db.clients.find({LOCALITE: {$gt: "Bruxelles"}},{_id: false, LOCALITE: true})

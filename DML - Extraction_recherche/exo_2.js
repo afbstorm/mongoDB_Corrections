@@ -1,0 +1,1 @@
+db.clients.find({COMPTE: {$eq: 0}},{_id: false, NOM: true, LOCALITE: true})

@@ -1,0 +1,1 @@
+db.experience.find({A: {$size: 2}, B: {$all: ["red","blue"]}})

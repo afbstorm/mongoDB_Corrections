@@ -1,0 +1,1 @@
+db.clients.find({$and: [{COMMANDES: {$exists: false}},{CAT: {$exists: false}},{NOM: {$type: "double"}}]},{})

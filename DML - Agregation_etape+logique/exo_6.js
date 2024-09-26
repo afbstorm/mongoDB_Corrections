@@ -1,0 +1,1 @@
+db.clients.aggregate([{$match: {NOM: {$regex: ".*n.*", $options: "i"}, COMPTE: {$gte: 0}}},{$sample: {size: 1}},{$project: {_id: false,NOM: true}}])

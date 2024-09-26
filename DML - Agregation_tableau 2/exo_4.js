@@ -1,0 +1,1 @@
+db.clients.aggregate({$project: {nbCom: {$cond: [{$isArray: "$COMMANDES"}, {$size: "$COMMANDES"}, 0]}}})

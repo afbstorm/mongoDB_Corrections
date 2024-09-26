@@ -1,0 +1,1 @@
+db.clients.find({$and: [{COMPTE: {$mod: [2,0]}},{NOM: {$regex: ".*er.*", $options: "i"}}]},{_id: false, NOM: true})

@@ -1,0 +1,1 @@
+db.clients.find({},{CAT: false})

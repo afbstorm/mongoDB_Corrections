@@ -1,0 +1,1 @@
+db.clients.find({$and: [{CAT: "B1"},{COMPTE: {$gt: 0}}]},{_id: false, NOM: true})

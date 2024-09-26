@@ -1,0 +1,1 @@
+db.clients.find({CAT: {$exists: false}},{_id: false, NOM: true, ADRESSE: true, COMPTE: true})

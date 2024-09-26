@@ -1,0 +1,1 @@
+db.clients.find({$and: [{COMPTE: {$ne: 0}},{LOCALITE: {$in: ["Namur", "Lille"]}}]},{_id: false, NOM: true})

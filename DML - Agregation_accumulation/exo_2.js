@@ -1,0 +1,1 @@
+// Afficher le PRIX minimal et maximal des produits.db.produits.aggregate([    {$group: {        _id: null,        PRIX_MIN: {$min: "$PRIX"},        PRIX_MAX: {$max: "$PRIX"}    }}])

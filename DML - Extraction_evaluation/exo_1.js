@@ -1,0 +1,1 @@
+db.clients.find({COMMANDES: {$exists: true}, $where: "this.COMMANDES.length == 1"},{_id: false, NOM: true})

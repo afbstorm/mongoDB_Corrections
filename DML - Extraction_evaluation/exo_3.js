@@ -1,0 +1,1 @@
+db.clients.find({COMMANDES: {$exists: false}, COMPTE: {$gt: 0}, NOM: {$not: {$type: "string"}}},{_id: false, NOM: true, LOCALITE: true})

@@ -1,0 +1,1 @@
+// Afficher la liste des NOM des clients ayant passé COMMANDESdb.clients.aggregate([    {$match: {        COMMANDES: {$exists: true}    }},    {$group: {        _id: null,        LISTE_NOM: {$push: "$NOM"}    }}])

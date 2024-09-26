@@ -1,0 +1,18 @@
+Composant:
+Un client se compose de: 
+	Numéro de client => NCLI,
+	Nom => NOM,
+	Adresse => ADRESSE,
+	Localite => LOCALITE,
+	Un tableau de COMMANDES
+		Une commande est composé de:
+			Numéro de commande => NCOM,
+			Date => DATECOM,
+			Detail => DETAIL
+				Un détail est composé de:
+					produit => PRODUIT contenant le NPROD
+					quantité => QCOM
+Un produit se compose de:
+	Numéro de produit => NPROD,
+	Libelle => LIBELLE,
+	Prix => PRIX

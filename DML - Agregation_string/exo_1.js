@@ -1,0 +1,1 @@
+// Afficher en minuscule et en majuscule le NOM des clients dans un // champ unique appeler NOM_MIN_MAJ.db.clients.aggregate([    {$project: {        NOM_MIN_MAJ: {$concat: [            {$toLower: "$NOM"},            " ",            {$toUpper: "$NOM"}        ]}    }},])

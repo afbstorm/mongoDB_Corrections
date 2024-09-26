@@ -1,0 +1,1 @@
+db.produits.aggregate(    {$project: {        NPROD: true,        _id: false,        TOTAL: {$multiply: ["$PRIX", "$QSTOCK"]}    }})//Afficher le montant total de la valeur des produits en stock.db.products.aggregate(    {$project: {                TOTAL: {$multiply: ["$PRIX", "$QSTOCK"]}               }    })

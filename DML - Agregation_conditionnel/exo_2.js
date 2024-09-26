@@ -1,0 +1,1 @@
+// Afficher « pas de catégorie » pour les clients n’ayant // pas de catégorie et qui n’ont jamais effectué de COMMANDESdb.clients.aggregate([    {$match: {        COMMANDES: {$exists: false},    }},    {$project: {        CAT: {$ifNull: ["$CAT", "pas de catégorie"]}    }}])

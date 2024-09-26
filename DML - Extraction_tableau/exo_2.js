@@ -1,0 +1,1 @@
+db.experience.find({B: {$size: 0}},{A: true, _id: false})

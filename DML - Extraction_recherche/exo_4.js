@@ -1,0 +1,1 @@
+db.clients.find({LOCALITE: {$nin: ["Bruxelles", "Poitiers"]}},{_id: false, NOM: true, LOCALITE: true})
